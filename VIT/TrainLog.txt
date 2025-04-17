@@ -1,0 +1,76 @@
+Jax Backend: gpu
+Epoch 1, Step 0 | Loss: 12.7486 | Batch Acc: 12.5% | Grad norm: 94.5311
+Epoch 1, Step 50 | Loss: 4.3571 | Batch Acc: 12.5% | Grad norm: 123.0906
+Epoch 1/50 | Avg Loss: 5.9795 | Accuracy: 15.73%
+Epoch 2, Step 0 | Loss: 2.9178 | Batch Acc: 12.5% | Grad norm: 231.8043
+Epoch 2, Step 50 | Loss: 1.5775 | Batch Acc: 50.0% | Grad norm: 24.5975
+Epoch 2/50 | Avg Loss: 2.9413 | Accuracy: 21.98%
+Epoch 3, Step 0 | Loss: 1.9772 | Batch Acc: 25.0% | Grad norm: 63.5621
+Epoch 3, Step 50 | Loss: 1.7784 | Batch Acc: 50.0% | Grad norm: 29.3738
+Epoch 3/50 | Avg Loss: 2.2588 | Accuracy: 27.02%
+Epoch 4, Step 0 | Loss: 2.2335 | Batch Acc: 25.0% | Grad norm: 71.9823
+Epoch 4, Step 50 | Loss: 2.0162 | Batch Acc: 37.5% | Grad norm: 89.2811
+Epoch 4/50 | Avg Loss: 2.0915 | Accuracy: 31.45%
+Epoch 5, Step 0 | Loss: 2.2736 | Batch Acc: 50.0% | Grad norm: 146.6210
+Epoch 5, Step 50 | Loss: 2.0299 | Batch Acc: 25.0% | Grad norm: 112.9623
+Epoch 5/50 | Avg Loss: 1.8583 | Accuracy: 40.52%
+Epoch 6, Step 0 | Loss: 1.3526 | Batch Acc: 50.0% | Grad norm: 23.5363
+Epoch 6, Step 50 | Loss: 2.1369 | Batch Acc: 25.0% | Grad norm: 67.6026
+Epoch 6/50 | Avg Loss: 1.7311 | Accuracy: 42.14%
+Epoch 7, Step 0 | Loss: 1.7146 | Batch Acc: 37.5% | Grad norm: 32.9862
+Epoch 7, Step 50 | Loss: 1.4530 | Batch Acc: 62.5% | Grad norm: 43.2924
+Epoch 7/50 | Avg Loss: 1.6391 | Accuracy: 47.18%
+Epoch 8, Step 0 | Loss: 1.9396 | Batch Acc: 25.0% | Grad norm: 62.5128
+Epoch 8, Step 50 | Loss: 1.3707 | Batch Acc: 75.0% | Grad norm: 60.2663
+Epoch 8/50 | Avg Loss: 1.5237 | Accuracy: 50.00%
+Epoch 9, Step 0 | Loss: 1.5916 | Batch Acc: 50.0% | Grad norm: 69.2121
+Epoch 9, Step 50 | Loss: 1.8084 | Batch Acc: 25.0% | Grad norm: 66.7981
+Epoch 9/50 | Avg Loss: 1.5144 | Accuracy: 50.00%
+Epoch 10, Step 0 | Loss: 1.2413 | Batch Acc: 62.5% | Grad norm: 39.9619
+Epoch 10, Step 50 | Loss: 1.3206 | Batch Acc: 50.0% | Grad norm: 28.3441
+Epoch 10/50 | Avg Loss: 1.3249 | Accuracy: 56.05%
+Epoch 11, Step 0 | Loss: 2.1965 | Batch Acc: 25.0% | Grad norm: 42.9084
+Epoch 11, Step 50 | Loss: 1.1285 | Batch Acc: 50.0% | Grad norm: 47.8093
+Epoch 11/50 | Avg Loss: 1.2802 | Accuracy: 58.47%
+Epoch 12, Step 0 | Loss: 1.1693 | Batch Acc: 62.5% | Grad norm: 46.1479
+Epoch 12, Step 50 | Loss: 1.0382 | Batch Acc: 75.0% | Grad norm: 56.6563
+Epoch 12/50 | Avg Loss: 1.2090 | Accuracy: 62.30%
+Epoch 13, Step 0 | Loss: 1.2542 | Batch Acc: 62.5% | Grad norm: 17.6052
+Epoch 13, Step 50 | Loss: 0.9766 | Batch Acc: 62.5% | Grad norm: 15.9735
+Epoch 13/50 | Avg Loss: 1.1030 | Accuracy: 65.93%
+Epoch 14, Step 0 | Loss: 1.0183 | Batch Acc: 75.0% | Grad norm: 32.7942
+Epoch 14, Step 50 | Loss: 1.4807 | Batch Acc: 37.5% | Grad norm: 38.1725
+Epoch 14/50 | Avg Loss: 1.0373 | Accuracy: 68.15%
+Epoch 15, Step 0 | Loss: 1.1548 | Batch Acc: 62.5% | Grad norm: 55.2456
+Epoch 15, Step 50 | Loss: 0.8553 | Batch Acc: 75.0% | Grad norm: 25.1594
+Epoch 15/50 | Avg Loss: 0.9843 | Accuracy: 67.94%
+Epoch 16, Step 0 | Loss: 0.6628 | Batch Acc: 87.5% | Grad norm: 22.2585
+Epoch 16, Step 50 | Loss: 1.2358 | Batch Acc: 50.0% | Grad norm: 78.7727
+Epoch 16/50 | Avg Loss: 0.9348 | Accuracy: 69.56%
+Epoch 17, Step 0 | Loss: 1.5162 | Batch Acc: 75.0% | Grad norm: 55.1895
+Epoch 17, Step 50 | Loss: 1.0237 | Batch Acc: 87.5% | Grad norm: 115.5057
+Epoch 17/50 | Avg Loss: 0.8496 | Accuracy: 73.79%
+Epoch 18, Step 0 | Loss: 0.3851 | Batch Acc: 75.0% | Grad norm: 13.0273
+Epoch 18, Step 50 | Loss: 1.4124 | Batch Acc: 50.0% | Grad norm: 50.9776
+Epoch 18/50 | Avg Loss: 0.8117 | Accuracy: 76.41%
+Epoch 19, Step 0 | Loss: 0.5183 | Batch Acc: 75.0% | Grad norm: 18.8491
+Epoch 19, Step 50 | Loss: 0.3032 | Batch Acc: 100.0% | Grad norm: 10.6562
+Epoch 19/50 | Avg Loss: 0.7399 | Accuracy: 78.63%
+Epoch 20, Step 0 | Loss: 0.6736 | Batch Acc: 75.0% | Grad norm: 19.1654
+Epoch 20, Step 50 | Loss: 0.9188 | Batch Acc: 75.0% | Grad norm: 56.2950
+Epoch 20/50 | Avg Loss: 0.6885 | Accuracy: 79.03%
+Epoch 21, Step 0 | Loss: 0.7459 | Batch Acc: 75.0% | Grad norm: 16.9499
+Epoch 21, Step 50 | Loss: 0.5189 | Batch Acc: 87.5% | Grad norm: 23.6932
+Epoch 21/50 | Avg Loss: 0.6823 | Accuracy: 78.43%
+Epoch 22, Step 0 | Loss: 0.6510 | Batch Acc: 87.5% | Grad norm: 26.4381
+Epoch 22, Step 50 | Loss: 0.2730 | Batch Acc: 100.0% | Grad norm: 22.4352
+Epoch 22/50 | Avg Loss: 0.6031 | Accuracy: 82.46%
+Epoch 23, Step 0 | Loss: 0.6872 | Batch Acc: 87.5% | Grad norm: 25.4891
+Epoch 23, Step 50 | Loss: 0.5542 | Batch Acc: 75.0% | Grad norm: 30.1998
+Epoch 23/50 | Avg Loss: 0.5916 | Accuracy: 82.26%
+Epoch 24, Step 0 | Loss: 0.1274 | Batch Acc: 100.0% | Grad norm: 15.7941
+Epoch 24, Step 50 | Loss: 0.5586 | Batch Acc: 75.0% | Grad norm: 54.6916
+Epoch 24/50 | Avg Loss: 0.5692 | Accuracy: 80.85%
+Epoch 25, Step 0 | Loss: 0.6006 | Batch Acc: 87.5% | Grad norm: 38.3835
+Epoch 25, Step 50 | Loss: 0.2666 | Batch Acc: 100.0% | Grad norm: 41.8867
+Epoch 25/50 | Avg Loss: 0.5528 | Accuracy: 83.27%

@@ -1,0 +1,10 @@
+jax==0.4.8
+jaxlib==0.4.7+cuda11.cudnn86
+numpy==1.24.3
+torch==2.0.0
+torchvision==0.15.0
+optax==0.1.5
+matplotlib==3.7.1
+seaborn==0.12.2
+flax==0.6.10
+dm-haiku==0.0.10

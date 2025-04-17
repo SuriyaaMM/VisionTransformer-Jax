@@ -1,0 +1,21 @@
+name: vit-jax
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip=22.3.1
+  - jax=0.4.8
+  - jaxlib=0.4.7
+  - numpy=1.24.3
+  - matplotlib=3.7.1
+  - seaborn=0.12.2
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - optax=0.1.5
+  - cudatoolkit=11.8
+  - cudnn=8.6.0
+  - pip:
+    - dm-haiku==0.0.10
+    - flax==0.6.10
+    - jaxlib==0.4.7+cuda11.cudnn86
