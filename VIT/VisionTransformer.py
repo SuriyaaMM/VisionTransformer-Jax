@@ -1,8 +1,8 @@
 import jax
 import jax.numpy as jnp
 
-from Transformer        import Transformer
-from PatchEmbedding     import PatchEmbedding
+from VIT.Transformer        import Transformer
+from VIT.PatchEmbedding     import PatchEmbedding
 
 class VisionTransformer():
 

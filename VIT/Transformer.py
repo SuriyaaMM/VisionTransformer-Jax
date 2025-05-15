@@ -1,6 +1,6 @@
-from MultiheadAttention import MultiheadAttention
-from Feedforward import Feedforward
-from LayerNorm import LayerNorm
+from VIT.MultiheadAttention import MultiheadAttention
+from VIT.Feedforward import Feedforward
+from VIT.LayerNorm import LayerNorm
 
 import jax
 import jax.numpy as jnp

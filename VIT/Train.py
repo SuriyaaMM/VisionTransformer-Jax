@@ -13,7 +13,7 @@ from torchvision.datasets.mnist     import MNIST
 from torchvision.transforms         import ToTensor, Compose
 from torch.utils.data               import DataLoader, Subset
 
-from VisionTransformer import VisionTransformer
+from VIT.VisionTransformer import VisionTransformer
 
 print(f"Jax Backend: {jax.default_backend()}")
 
@@ -77,7 +77,9 @@ def Train():
 
     learning_rate   = 3e-4
     batch_size      = 8
-    num_epochs      = 50
+    num_epochs      = 10
+
+    __Debug = False
     
     # Load training dataset
     train_dataset = MNIST(datasetPath, download=True, transform=ToTensor())
@@ -103,7 +105,7 @@ def Train():
         numLayers=3,      
         numClasses=10,    # MNIST has 10 classes
         PRNGKey=jax.random.PRNGKey(42),
-        report=True
+        report=False
     )
 
     # Set to Training Mode
@@ -145,24 +147,25 @@ def Train():
             correct         += batchCorrect
             total           += labels_jax.shape[0]
 
-            # Print batch stats
-            if step % 50 == 0:
+            if __Debug:
+                # Print batch stats
+                if step % 50 == 0:
 
-                vit.training = False
-                    
-                # Get a single batch for visualization
-                with jax.disable_jit():
-                    eval_logits = vit.forward(images_jax)
-                            
-                # Convert attention weights to numpy for visualization
-                numpy_attention_weights = [w.block_until_ready().copy() for w in vit.DebugAttentionWeights]
-                VisualizeAttention(numpy_attention_weights, epoch)
+                    vit.training = False
                         
-                # Set back to training mode
-                vit.training = True
+                    # Get a single batch for visualization
+                    with jax.disable_jit():
+                        eval_logits = vit.forward(images_jax)
+                                
+                    # Convert attention weights to numpy for visualization
+                    numpy_attention_weights = [w.block_until_ready().copy() for w in vit.DebugAttentionWeights]
+                    VisualizeAttention(numpy_attention_weights, epoch)
+                            
+                    # Set back to training mode
+                    vit.training = True
 
-                batchAcc = 100 * batchCorrect / labels_jax.shape[0]
-                print(f"Epoch {epoch+1}, Step {step} | Loss: {loss:.4f} | Batch Acc: {batchAcc:.1f}% | Grad norm: {gradNorm:.4f}")
+                    batchAcc = 100 * batchCorrect / labels_jax.shape[0]
+                    print(f"Epoch {epoch+1}, Step {step} | Loss: {loss:.4f} | Batch Acc: {batchAcc:.1f}% | Grad norm: {gradNorm:.4f}")
         
         # Epoch summary            
         epochLoss   = totalLoss / (step + 1)
@@ -171,7 +174,7 @@ def Train():
     
     print("Training completed successfully!")
     
-    return vit, params
+    return vit, params, float(accuracy)
 
 if __name__ == "__main__":
     vit, params = Train()
